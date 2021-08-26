@@ -1,0 +1,145 @@
+@media screen and (max-width: 1279px) {
+	body {min-width: 1260px; width: 100%}
+	header img{margin-left: 20px;}
+	nav, .telefon, .mobile-none{display:none!important;}
+
+	.mobile-button{
+		display: block;
+		cursor: pointer;
+	}
+
+	.mobile-menu{
+		display: block;
+	}
+
+}
+
+
+@media screen and (max-width: 840px) {
+	body {min-width: 10px; width: 100%}
+
+	header img{margin-left: 20px;}
+	nav, .telefon, .mobile-none{display:none!important;}
+	
+
+
+	.mobile-button{
+		display: block;
+		cursor: pointer;
+	}
+
+	.mobile-menu{
+		display: block;
+	}
+
+	
+
+	 #firstDisplay{
+	 	background-size: cover;
+	 }
+	  #firstDisplay .utp{
+	  	width: 100%;
+	  	padding: 0;
+	}
+	#firstDisplay p{
+		margin-top: 25%;
+		margin-bottom: 19%;
+		font-size: 44px;
+	 }
+
+	.but-more{font-size: 24px;}
+	.but-more:hover{color: #F057AE;}
+
+	.header-wrapper{width: 90%;}
+	.header-wrapper h1{width: 100%;}
+	.header-wrapper hr{display: none;}
+
+	.mk{
+		margin: 50px auto;
+		width: 90%;
+		display: block;
+	}
+	.mk a{margin: 30px auto;}
+	.mk div{max-height: 220px;}
+
+	.recall{
+		display:block;
+		width: 90%!important;
+		margin: 50px auto;
+	}
+	.top-recall{width: 60%!important;}
+	.recall img{width: 27%!important;}
+	.step{
+		margin:50px auto;
+		display:block;
+		width: 80%;
+	}
+	.items-reasons{
+		display: block;
+		width: 90%;
+	}
+	.text-reason{border: none;}
+	.format{
+		display:block;
+		width: 70%;
+		margin: 50px auto;
+	}
+	.map-item{
+		width: 95%;
+		display: block;
+		margin: 50px auto;
+	}
+	.map-item img{
+		display: block;
+		width: 100%;
+	}
+	.adress{
+		width: 100%;
+		height: 210px;
+	}
+	
+	/*Всплывающие окна*/
+	
+
+	.open-win form{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -125px 0 0 -125px ;
+		padding:25px 0;
+		display: block;
+		width: 250px;
+		height: 200px;
+		z-index: 996;
+	}
+
+
+	.open-win form input, .open-win form input:focus{
+		margin: 15px auto;
+		width: 100%;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		border: none;
+		border-radius: 0!important;
+		border-bottom: 1px solid #B2B2B2;
+		outline: none;
+		background: none;
+		color: #B2B2B2;
+	}
+
+	.open-win form input.submit{
+		width: 120px;
+		height: 120px;
+		border-radius: 120px!important;
+		margin: 15px auto 0 auto;
+		padding: 5px 10px;
+		background: green;
+		color: white;
+		border: none;
+		cursor: pointer;
+		background: -moz-linear-gradient(green, green);
+	    background: -webkit-gradient(linear, 0 0, 0 100%, from(green), to(green));
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='green', endColorstr='green');
+		}
+}

@@ -1,0 +1,1366 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic);
+a, img{
+	text-decoration:none;
+	outline:none;
+	border:none;
+}
+
+.center{
+	margin:20px auto;
+	display:block;
+}
+
+html{
+	height:100%;
+}
+
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family:'Roboto','Open Sans', sans-serif;
+	position:relative;
+}
+
+@media screen and (min-width:1025px) {
+	#infoBlock{
+		margin:0 0 0 0;
+		background:url(../images/background2.jpg) no-repeat;
+		background-size:100%;
+		border-top:1px solid grey;
+		width:100%;
+		min-width:1080px;
+		min-height:100%;
+		position:relative;
+	}
+}
+
+
+#header{
+	max-width:1440px;
+	width:100%;
+	border-radius:18px;
+	background:url(../images/headerBg.png);
+	margin:-15px auto 5px auto;
+	height:85px;
+}
+
+.logo{
+	margin:23px auto auto 60px;
+}
+
+#phone{
+	width:300px;
+	height:64px;
+	margin:15px 60px 0 0;
+	padding:0;
+	float:right;
+}
+
+#phoneNumber{
+	font-weight:700;
+	text-align:center;
+	font-size:24px;
+	color:#FF6C64;
+	margin:0;
+}
+
+#phoneNumber span{
+	color:white;
+	font-weight:100;
+}
+
+body .timeCall{
+	text-align:center;
+	margin:0 auto;
+	font-size:14px;
+	color:white;
+	font-weight:300;
+}
+
+#callback{
+	text-align:center;
+	margin-top:0;
+	font-weight:400;
+	color:#FCEDC4;
+	text-decoration:underline;
+}
+
+#callback:hover{
+	cursor:pointer;
+	color:#EACD7D;
+}
+
+.photo_disDiv{
+	margin:5px auto;
+	display:block;
+	max-width:1440px;
+	width:100%;
+	padding:0;
+	z-index:995;
+	position:absolute;
+	bottom:15px;
+	left:5px;
+}
+
+.photo_dis{
+	text-indent:20px;
+	/*color:#FF6C64;*/
+	color:black;
+	font-size:16px;
+	font-weight:400;
+	margin:0;
+}
+
+.photo_dis font{
+	padding:3px;
+	margin:0;
+	border-radius:18px;
+	/*background:url(../images/headerBg.png);*/
+	background:url(../images/utpBg.png);
+}
+
+
+body #UTP{
+	padding:20px;
+	background:url(../images/utpBg.png);
+	width:570px;
+	position:absolute;
+	bottom:10%;
+	right:0;
+	border-radius:18px 0 0 18px;
+	z-index:995;
+}
+
+
+#UTP h2{
+	/*color:#206691;*/
+	color:black;
+	text-align:center;
+	font-weight:400;
+	margin:5px;
+	/*width:570px;*/
+}
+
+#UTP h2 span{
+	color:#FF483E;
+	text-align:center;
+	font-size:18px;
+	font-weight:400;
+	margin:5px;
+}
+
+.but{
+	font-family:roboto, sans-serif;
+	font-weight:400;
+	width:180px;
+	height:30px;
+	padding-top:11px;
+	font-size:17px;
+	color:#FF629A;
+	background:#F5F403;
+	text-align:center;
+	border-radius:8px;
+	margin:10px auto 0 auto;
+	display:block;
+	border-bottom:4px solid #F6DD20;
+	z-index:999;
+	/*плавная смена цвета фона кнопки*/
+	-webkit-transition-duration: 0.5s; 
+	-o-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s; 
+	transition-duration: 0.5s;
+	/*плавная смена цвета фона кнопки*/
+}
+
+.dopBg{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index:990;
+}
+
+.unChek, .chek{
+	margin:15px auto 15px auto;
+	display:block;
+	width:350px;
+	text-align:center;
+	cursor:pointer;
+	font-weight:300;
+	border-bottom:1px solid #305F85;
+	color:white;
+}
+
+.unChek:hover, .chek:hover{border-bottom:1px solid #FF6C64;}
+
+body .aboutP{
+	text-indent:40px;
+	font-weight:400;
+	font-size:1.2em;
+	/*color:#00366A;*/
+	color:black;
+}
+
+.full{
+	width:100%;
+}
+
+
+
+#dis2, #videoSpeak, #klientChoice, #videoSpeak, #howIn, #galleryPhoto, #howIn2, #aboutUs, #photoArtists{
+	width:1080px;
+	margin:0 auto;
+	display:block;
+	border-top:1px solid white;
+}
+
+#videoSpeak h2, #klientChoice h2, #videoSpeak h2, #howIn h2, #galleryPhoto h2, #howIn2 h2, #photoArtists h2{
+	text-align:center;
+	font-weight:normal;
+	color:#305F85;
+	margin-top:40px;
+	margin-bottom:40px;
+	font-size:28px;
+	/*font-family:roboto, 'roboto', sans-serif;*/
+	font-family: 'Lobster', cursive;
+}
+
+.title{
+	height:;
+	background:#FF9994;
+	color:white;
+	text-align:center;
+	padding:5px;
+	margin-top:60px;
+	/*opacity:0.8;*/
+}
+
+.title h2{
+	/*font-family:roboto, sans-serif;*/
+	font-family: 'Lobster', cursive;
+	font-weight:400;
+	color:#305F85;
+	font-size:1.8em;
+}
+
+.title1{
+	background:#FF6C64;
+	color:white;
+	text-align:center;
+	padding:5px;
+	opacity:0.8;
+	border-radius:8px;
+}
+
+html body .title1 h3, .title1 .mk_info {
+	color:white;
+}
+
+#dis2Container{
+	margin:10px auto 0  auto;
+	display:block;
+	width:1050px;
+	outline:0px solid red;
+	padding:0;
+}
+
+.items{
+	display:inline-block;
+	width:335px;
+	margin:10px 0 0 10px;
+	padding:0;
+	vertical-align:top;
+	height:200px;
+	outline:0px solid red;
+	padding:5px 0;
+}
+
+.inItem{
+	width:260px;
+	margin:0 0 0 15px;
+	padding-bottom:7px;
+	border-bottom:1px solid #D0D0D0;
+}
+
+.numberP{
+	font-size:28px;
+	font-weight:700;
+	/*color:#2779AD;*/
+	color:black;
+	margin:0;
+}
+
+.dicript{
+	font-size:15px;
+	font-weight:400;
+	color:#FF6C64;
+	margin:5px 0 0 0;
+}
+
+.otherText{
+	font-size:14px;
+	font-weight:300;
+	/*color:#2779AD;*/
+	color:black;
+	margin:5px 0 0 0;
+	height:120px;
+	outline:0px solid red;
+}
+
+.albumVK{
+	margin:30px auto 0 auto;
+	padding:5px 0;
+	display:block;
+	width:1000px;
+}
+
+.aVK{
+	font-size:20px;
+	
+}
+
+#seven{
+	border:none;
+}
+
+.containerItem{
+	width:350px;
+	margin:0 auto;
+	display:block;
+}
+
+.butDiv{
+	margin:5px auto;
+	display:block;
+	padding:5px;
+}
+
+.button1, .buttonForm, #buttonFormE{
+	font-family:roboto, sans-serif;
+	font-weight:400;
+	width:280px;
+	height:40px;
+	padding-top:17px;
+	font-size:22px;
+	color:#FF629A;
+	background:#FFF600;
+	text-align:center;
+	border-radius:8px;
+	margin:10px auto 0 auto;
+	display:block;
+	border-bottom:4px solid #F6DD20;
+	/*плавная смена цвета фона кнопки*/
+	-webkit-transition-duration: 0.5s; 
+	-o-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s; 
+	transition-duration: 0.5s;
+	/*плавная смена цвета фона кнопки*/
+}
+
+.buttonForm, #buttonFormE{
+	margin-top:20px;
+	width:250px;
+}
+
+.button1:hover, .buttonForm:hover, .knopka_pod3:hover, .but:hover, #buttonFormE:hover{
+	cursor:pointer;
+	background:#F5F403;
+}
+
+.gallery{
+	margin-top:50px;
+}
+
+.studyWork{
+	display:inline-block;
+	vertical-align:top;
+	padding:0 7px;
+}
+
+.studyName{
+	width:250px;
+	margin:7px auto;
+	display:block;
+	font-size:15px;
+	font-weight:400;
+	color:#FF6C64;
+	margin:5px 0 0 0;
+}
+
+.studyDiscript{
+	width:250px;
+	margin:7px auto;
+	font-size:14px;
+	font-weight:300;
+	/*color:#2779AD;*/
+	color:black;
+	margin:5px 0;
+}
+
+.imgPhoto{
+	width:250px;
+	height:169px;
+	margin:7px auto;
+	display:block;
+	cursor:pointer;
+}
+
+.radius{border-radius:6px;}
+
+.textKlient{
+	width:500px;
+	height:420px;
+	margin:15px 10px;
+	display:inline-block;
+	vertical-align:top;
+	padding:0 7px;
+	outline:0px solid red;
+	border-right:1px solid #D0D0D0;
+	border-bottom:1px solid #D0D0D0;
+	border-radius:0 0 8px 0;
+}
+
+.photoText{
+	display:inline-block;
+	vertical-align:top;
+}
+
+.textInPhoto{
+	width:160px;
+}
+
+.NameText{
+	display:inline-block;
+	vertical-align:top;
+	margin:40px 0 0 20px;
+}
+
+.textOtziv{
+	margin:5px auto;
+	display:block;
+}
+
+.otziv{
+	margin:7px auto;
+	display:block;
+	font-size:15px;
+	font-weight:400;
+	/*color:#2779AD;*/
+	color:black;
+	margin:5px 0 0 0;
+	text-indent:20px;
+}
+
+.discript{
+	margin:0 auto 20px auto;
+	display:block;
+	border-radius:18px;
+	font-size:22px;
+	padding:15px;
+	text-align:center;
+	border:1px solid #FF6C64;
+	color:#FF6C64;
+	background:#FFF4F3;
+	
+}
+
+.discriptDop{
+	margin:0 auto 20px auto;
+	display:block;
+	border-radius:18px;
+	font-size:22px;
+	text-align:center;
+	padding:25px 15px 15px 15px;
+	height:43px;
+	border:1px solid #FF6C64;
+	color:#FF6C64;
+	background:#FFF4F3;
+}
+
+.butHidden{
+	color:#2643A3;
+	font-size:22px;
+	margin:15px auto 15px 60px;
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+.wrapperArtist{
+	width:870px;
+	display:block;
+	margin:0 auto;
+	padding:0;
+}
+
+.artist{
+	display:inline-block;
+	vertical-align:top;
+	width:214px;
+	cursor:pointer;
+	margin:20px 0 0 0;
+}
+
+.imgArtist{
+	width:160px;
+	padding:0;
+	margin:5px auto;
+	display:block;
+}
+
+.imgArtist img{
+	width:160px;
+	height:190px;
+	margin:0 auto;
+	display:block;
+	outline:0px solid red;
+}
+
+.artistDiscript{
+	width:160px;
+	margin:0 auto;
+	display:block;
+}
+
+.nameArtist{
+	text-align:center;
+	font-size:15px;
+	font-weight:400;
+	color:#FF6C64;
+	margin:5px 0 0 0;
+}
+
+.aboutHim{
+	text-align:center;
+	font-size:14px;
+	font-weight:300;
+	/*color:#2779AD;*/
+	color:black;
+	margin:5px 0 0 0;
+}
+
+.podrobnee{
+	text-align:center;
+	font-size:13px;
+	font-weight:400;
+	color:blue;
+	margin:5px 0 0 0;
+}
+
+
+#howIn img{margin-top:20px;}
+
+body .sertifikate{
+	margin:10px auto;
+	display:block;
+	width:450px;
+	border-radius:15px;
+}
+
+#containerHow{
+	margin:0 auto 30px auto;
+	display:block;
+	width:982px;
+	height:130px;
+	outline:0px solid green;
+}
+
+#containerHow2{
+	margin:0 auto;
+	display:block;
+	width:982px;
+}
+
+#containerHow2 h3, .p1{
+	/*color:#2779AD;
+	color:black;*/
+	text-align:center;
+	opacity:0.9;
+}
+
+#containerHow2 .pp{
+	color:#FF6C6C;
+	text-align:center;
+	font-size:18px;
+}
+
+#bestPrice{
+	margin:5px auto;
+	display:block;
+	/*width:590px;*/
+	padding:5px 2px;
+	outline:2px solid #FF6C6C;
+}
+
+.vmesto{
+	/*color:#2779AD;*/
+	color:black;
+}
+
+.discript_how, .discript_howEnd{
+	padding:20px;
+	margin:5px;
+	width:195px;
+	text-align:center;
+	float:left;
+	outline:0px solid red;
+	font-weight:300;
+	/*color:#00366A;*/
+	color:black;
+	font-size:18px;
+}
+
+.discript_howEnd{color:#FF6C64;}
+
+.mk_info, .mk_infoP, .mk_infoD{
+	text-align:center;
+	font-weight:600;
+	/*color:#2779AD;*/
+	color:black;
+	font-size:18px;
+}
+
+.mk_infoP{
+	font-weight:400;
+	text-align:left;
+	text-indent:330px;
+}
+
+.mk_infoD{font-size:22px;}
+
+#formDiv{
+	width:1080px;
+	margin:30px auto 0 auto;
+	display:block;
+	border-top:1px solid white;
+}
+
+#formDiv h2{
+	text-align:center;
+	color:#FF6C64;
+	padding:0 20px;
+	display:none;
+}
+
+#form, .form{
+	margin:0 auto;
+	display:block;
+	border:2px solid #FF6C64;
+	border-radius:10px;
+	width:410px;
+	padding:30px 0 0 0;
+	background:#FFF4F3;
+}
+
+#form  input, .form  input{
+	margin:5px auto 0 auto;
+	display:block;
+	height:30px;
+	width:280px;
+	outline:none;
+	border:1px solid #FF6C64;
+	text-indent:1em;
+	font-family:roboto;
+	font-size:18px;
+	font-weight:300;
+	border-radius:3px;
+}
+
+/*.buttonForm,*/ .knopka_pod3{
+	width:200px;
+	height:40px;
+	padding-top:17px;
+	font-size:22px;
+	color:white;
+	background:#FF6C64;
+	text-align:center;
+	border-radius:8px;
+	margin:25px auto 0 auto;
+	display:block;
+	border-bottom:4px solid #D55A54;
+	/*плавная смена цвета фона кнопки*/
+	-webkit-transition-duration: 0.5s; 
+	-o-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s; 
+	transition-duration: 0.5s;
+	/*плавная смена цвета фона кнопки*/
+}
+
+
+
+#politika{
+	text-align:center;
+	font-size:16px;
+	font-weight:300;
+	color:#00366A;
+	margin:25px auto;
+	display:block;
+	text-decoration:none;
+}
+
+#politika:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+#map{
+	border-top:1px solid white;
+	height:565px;
+	background:url(../images/map.jpg) center no-repeat;
+	margin-top:40px;
+}
+
+#wripperLoc{
+	position:relative;
+	width:1080px;
+	margin:0 auto;
+	display:block;
+}
+
+#location{
+	position:absolute;
+	left:0;
+	top:0;
+	width:300px;
+	background:url(../images/headerBg.png);
+	height:545px;
+	padding:10px;
+}
+
+.locAdres{
+	color:#FF6C64;
+	margin-top:50px;
+	font-size:22px;
+}
+
+.discriptLoc{
+	color:white;
+	font-size:18px;
+	font-weight:300;
+}
+
+#footer{
+	max-width:1440px;
+	width:100%;
+	border-radius:18px 18px 0 0;
+	background:url(../images/headerBg.png);
+	margin:30px auto -45px auto;
+	height:70px;
+	position:relative;
+}
+
+.fLeft{
+	float:left;
+	width:200px;
+	color:#FF6C64;
+	margin-left:103px;
+	opacity:0.8;
+}
+
+.fRight{
+	float:right;
+	width:200px;
+	color:white;
+	margin-right:83px;
+	opacity:0.8;
+}
+
+.madeIn{
+	text-decoration:none;
+	position:absolute;
+	bottom:3px;
+	left:600px;
+	color:white;
+	text-align:center;
+	width:200px;
+}
+/*стили для описания художников*/
+
+.aboutPerson{
+	width:780px;
+	padding:20px 50px 40px 50px;
+	margin:0 auto 0 auto;
+	background-color:#FFF4F3;
+	display:block;
+}
+
+.headerAP{
+	margin-left:15px;
+}
+
+.headerAP_line{
+	display:inline-block;
+}
+
+.headerAP img{
+	height:120px;
+	margin:5px 0;
+}
+
+.block_AP{
+	height:120px;
+	vertical-align:top;
+}
+
+.nameAP{
+	margin:40px 0 0 15px;
+	font-size:28px;
+	font-weight:600px;
+}
+
+.discriptAP{
+	margin:7px 0 0 15px;
+	font-size:14px;
+	font-weight:300px;
+	font-style:italic;
+	color:grey;
+}
+
+.aboutArtist{
+	font-weight:400;
+	font-size:14px;
+	color:#00366A;
+	margin:5px 0;
+}
+
+
+.boldStyle{
+	font-weight:600;
+	font-style:italic;
+	color:#003659;
+}
+
+.textAP{
+	margin:10px auto;
+	display:block;
+	padding:0;
+}
+
+
+/*отзывы всплывающие*/
+
+
+#pod3, #dispalyArtisrs{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	background:url(../images/headerBg.png);
+	z-index:999;
+	display:none;
+}
+
+#form3{
+	margin:0 auto 0 auto;
+	background-color:#FFF4F3;
+	height:300px;
+	width:550px;
+	padding:0px;
+	border-radius:0 0 6px 6px;
+	border:1px solid #FFF4F3;
+	position:relative;
+}
+
+#form3 h3{
+	color:#FF6C64;
+	text-align:center;
+	margin-bottom:20px;
+	font-family:roboto;
+	font-size:22px;
+	font-weight:400;
+}
+
+#form3 input{
+	margin:5px auto 0 auto;
+	display:block;
+	height:30px;
+	width:440px;
+	outline:none;
+	text-align:center;
+	border:1px solid #FF6C64;
+	font-family:roboto;
+	font-size:22px;
+	font-weight:300;
+}
+
+.close {
+	position:absolute;
+	left:225px;
+	bottom:0;
+	width:100px;
+	cursor:pointer;
+}
+
+
+
+#videoHidden{
+	width:640px;
+	margin:10% auto 0 auto;
+	display:block;
+	position:relative;
+}
+
+.cclose, .gclose{
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+}
+
+#galleryLB{
+	margin:40px auto;
+	display:block;
+	padding:10px;
+	position:relative;
+	width:860px;
+	height:572px;
+	border-radius:18px;
+	border:2px solid #FF6C64;
+}
+
+#forward{
+	position:absolute;
+	right:-43px;
+	top:45%;
+	width:33px;
+	cursor:pointer;
+}
+
+#back{
+	position:absolute;
+	left:-43px;
+	top:45%;
+	width:33px;
+	cursor:pointer;
+}
+
+#imgLB{
+	margin:0 auto;
+	display:block;
+	width:860px;
+	border-radius:12px;
+}
+
+#nikitin, #elena, #uriy{
+	margin:0 auto 0 auto;
+	padding:5px 10px;
+	background-color:#FFF4F3;
+	height:600px;
+	width:950px;
+	border-radius:0 0 6px 6px;
+	border:1px solid #FFF4F3;
+	position:relative;
+}
+
+.aboutArtist img{
+	border-radius:20px;
+	width:120px;
+	float:left;
+	margin: 0 10px 5px 5px;
+}
+
+.Nclose, .Eclose, .Uclose{
+	position:absolute;
+	left:425px;
+	bottom:0;
+	width:100px;
+	cursor:pointer;
+}
+
+#exit_content{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:999;
+}
+
+#form_exit{
+	margin:50px auto 0 auto;
+	display:block;
+	padding:10px 20px 20px 20px;
+}
+
+#form_exit h2{
+	text-align:center;
+	margin:5px 0 10px 0;
+	font-size:22px;
+}
+
+/*АДАПТАЦИЯ ПОД РАЗНЫЕ УСТРОЙСТВА*/
+
+@media screen and (max-width:1024px) {
+	
+	 html {
+		width:1024px;
+	 }
+	body {
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+		width:1024px;
+		height:100%;
+		font-family:'Roboto','Open Sans', sans-serif;
+		position:relative;
+		text-indent:0;
+	}
+
+	#infoBlock{
+		margin:68px 0 0 0;
+		background:url(../images/background2.jpg) no-repeat;
+		background-size:100%;
+		border-top:1px solid #497EAF;
+		width:1024px;
+		height:600px;
+		position:relative;
+	}
+	
+	.dopBg{display:none;}
+
+	#header{
+		width:1024px;
+		border-radius:0px;
+		background:url(../images/headerBg.png);
+		margin:-85px auto 5px auto;
+		height:85px;
+	}
+	
+	body #UTP{
+	width:380px;
+	bottom:10%;
+	right:2%;
+	border-radius:18px;
+	}
+	
+	#UTP h2{font-size:16px;}
+	#UTP h2 span{font-size:14px;}
+	
+	.photo_disDiv{
+		margin:5px auto;
+		display:block;
+		width:1024px;
+		padding:0;
+		z-index:995;
+		position:absolute;
+		bottom:15px;
+		left:5px;
+	}
+
+	.photo_dis{
+		text-indent:0px;
+		/*color:#FF6C64;*/
+		color:black;
+		font-size:16px;
+		font-weight:400;
+		margin:0;
+	}
+	
+	#howIn img{	
+		margin-top:20px;
+		width:1024px;
+	}
+		
+	.full{
+		width:1024px;
+	}
+	
+	#dis2, #videoSpeak, #klientChoice, #videoSpeak, #howIn, #howIn2, #aboutUs, #photoArtists{
+	width:1024px;
+	margin:0 0 0 0;
+	display:block;
+	border-top:1px solid white;
+	}
+	
+	#dis2Container{
+		margin:10px 0 0 0;
+		display:block;
+		width:1024px;
+		padding:0;
+	}
+	
+	.wrapperArtist{
+		max-width:910px;
+		min-width:440px;
+		width:100%;
+		display:block;
+		margin:0 auto;
+		padding:0;
+	}
+	
+	
+	.items{
+		display:inline-block;
+		width:315px;
+		margin:10px 0 0 10px;
+		padding:0;
+		vertical-align:top;
+		height:200px;
+		outline:0px solid red;
+		padding:5px 0;
+	}
+	
+	 #galleryPhoto{
+		width:800px;
+	 }
+	 
+	.albumVK{width:800px;}
+	.aVK{font-size:14px;}
+	#containerVideo{display:none;}
+	.textKlient{
+		width:750px;
+		height:350px;
+		margin:15px auto;
+		display:block;
+		vertical-align:top;
+		padding:0 7px;
+		outline:0px solid red;
+		border-right:1px solid #D0D0D0;
+		border-bottom:1px solid #D0D0D0;
+		border-radius:0 0 8px 0;
+	}
+	
+	.mk_infoP{
+		font-weight:400;
+		text-align:left;
+		text-indent:30px;
+	}
+		
+	.butHidden{
+		color:#2643A3;
+		font-size:20px;
+		margin:25px auto;
+		display:block;
+		width:200px;
+		cursor:pointer;
+		text-decoration:underline;
+	}
+	
+	#formDiv{
+		width:1024px;
+		margin:30px auto 0 auto;
+		display:block;
+		border-top:1px solid white;
+	}
+	
+	#wripperLoc{
+		position:relative;
+		width:1024px;
+		margin:0 auto;
+		display:block;
+	}
+	
+	#location{
+		position:absolute;
+		left:10px;
+		top:0;
+		width:300px;
+		background:url(../images/headerBg.png);
+		height:545px;
+		padding:10px;
+	}
+	
+	#footer{
+		width:1000px;
+		border-radius:18px 18px 0 0;
+		background:url(../images/headerBg.png);
+		margin:30px auto -45px auto;
+		height:70px;
+		position:relative;
+	}
+
+
+}
+
+/**/
+@media screen and (max-width:768px) {
+	
+	 html {
+		width:768px;
+	 }
+	body {
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+		width:768px;
+		height:100%;
+		font-family:'Roboto','Open Sans', sans-serif;
+		position:relative;
+		text-indent:0;
+	}
+
+	#infoBlock{
+		margin:0 0 0 0;
+		background:url(../images/background2_mobile.jpg) no-repeat;
+		background-size:100%;
+		border-top:1px solid white;
+		width:768px;
+		height:1136px;
+		position:relative;
+	}
+	
+	.dopBg{display:none;}
+
+	#header{
+		display:none;
+	}
+	
+	body #UTP{
+	width:768px;
+	bottom:0;
+	right:0;
+	border-radius:18px;
+	}
+	
+	#UTP h2{font-size:20px;}
+	#UTP h2 span{font-size:18px;}
+	
+	.photo_disDiv{
+		margin:5px auto;
+		display:block;
+		width:1024px;
+		padding:0;
+		z-index:995;
+		position:absolute;
+		bottom:15px;
+		left:5px;
+	}
+
+	.photo_dis{
+		text-indent:0px;
+		/*color:#FF6C64;*/
+		color:black;
+		font-size:16px;
+		font-weight:400;
+		margin:0;
+	}
+	
+	#howIn img{	
+		margin-top:20px;
+		width:1024px;
+	}
+		
+	.full{
+		width:1024px;
+	}
+	
+	#dis2, #videoSpeak, #klientChoice, #videoSpeak, #howIn, #howIn2, #aboutUs, #photoArtists{
+	width:1024px;
+	margin:0 0 0 0;
+	display:block;
+	border-top:1px solid white;
+	}
+	
+	#dis2Container{
+		margin:10px 0 0 0;
+		display:block;
+		width:1024px;
+		padding:0;
+	}
+	
+	.wrapperArtist{
+		max-width:910px;
+		min-width:440px;
+		width:100%;
+		display:block;
+		margin:0 auto;
+		padding:0;
+	}
+	
+	
+	.items{
+		display:inline-block;
+		width:315px;
+		margin:10px 0 0 10px;
+		padding:0;
+		vertical-align:top;
+		height:200px;
+		outline:0px solid red;
+		padding:5px 0;
+	}
+	
+	 #galleryPhoto{
+		width:800px;
+	 }
+	 
+	.albumVK{width:800px;}
+	.aVK{font-size:14px;}
+	#containerVideo{display:none;}
+	.textKlient{
+		width:750px;
+		height:350px;
+		margin:15px auto;
+		display:block;
+		vertical-align:top;
+		padding:0 7px;
+		outline:0px solid red;
+		border-right:1px solid #D0D0D0;
+		border-bottom:1px solid #D0D0D0;
+		border-radius:0 0 8px 0;
+	}
+	
+	.mk_infoP{
+		font-weight:400;
+		text-align:left;
+		text-indent:30px;
+	}
+		
+	.butHidden{
+		color:#2643A3;
+		font-size:20px;
+		margin:25px auto;
+		display:block;
+		width:200px;
+		cursor:pointer;
+		text-decoration:underline;
+	}
+	
+	#formDiv{
+		width:1024px;
+		margin:30px auto 0 auto;
+		display:block;
+		border-top:1px solid white;
+	}
+	
+	#wripperLoc{
+		position:relative;
+		width:1024px;
+		margin:0 auto;
+		display:block;
+	}
+	
+	#location{
+		position:absolute;
+		left:10px;
+		top:0;
+		width:300px;
+		background:url(../images/headerBg.png);
+		height:545px;
+		padding:10px;
+	}
+	
+	#footer{
+		width:1000px;
+		border-radius:18px 18px 0 0;
+		background:url(../images/headerBg.png);
+		margin:30px auto -45px auto;
+		height:70px;
+		position:relative;
+	}
+
+
+}
+
+
+@media screen and (min-width:1920px) {
+
+	body #UTP{
+	width:600px;
+	bottom:12%;
+	right:12%;
+	border-radius:18px;
+	}
+	
+	#UTP h1{font-size:32px;}
+
+}

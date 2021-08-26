@@ -1,0 +1,19 @@
+$raleway: 'Raleway';
+$raleway-bold: 'Raleway-bold';
+$raleway-black: 'Raleway-black';
+$roboto-cond: 'Roboto Condensed', sans-serif;
+
+@font-face{
+    font-family: $raleway-black;
+	src:url('../fonts/Raleway-Black.ttf');
+}
+
+@font-face{
+    font-family: $raleway-bold;
+    src:url('../fonts/Raleway-Bold.ttf');
+}
+
+@font-face{
+    font-family: $raleway;
+    src:url('../fonts/Raleway-Regular.ttf');
+}

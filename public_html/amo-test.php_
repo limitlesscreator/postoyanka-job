@@ -1,0 +1,22 @@
+<?
+/** /
+include('amo_func.php');
+amo_auth();
+/** /
+/** /
+$link = 'https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/list/';
+$res = amo_query($link,'');
+
+echo '<pre>';
+print_r($res);
+echo '</pre>';
+/** /
+
+/** /
+$link = 'https://'.$subdomain.'.amocrm.ru/private/api/v2/json/leads/list/';
+$res = amo_query($link,'');
+
+echo '<pre>';
+print_r($res);
+echo '</pre>';
+/**/

@@ -1,0 +1,12 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
+
+RewriteEngine On 
+
+RewriteCond %{ENV:HTTPS} !on 
+
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    

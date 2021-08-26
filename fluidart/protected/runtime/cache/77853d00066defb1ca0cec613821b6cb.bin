@@ -1,0 +1,18 @@
+a:2:{i:0;s:756:"<p><a data-toggle="modal" data-target="#agreement">Пользовательское соглашение</a>
+</p>
+<div class="modal fade" id="agreement" tabindex="-1" role="dialog" aria-labelledby="agreement">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title">Пользовательское соглашение</h4>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>";i:1;N;}

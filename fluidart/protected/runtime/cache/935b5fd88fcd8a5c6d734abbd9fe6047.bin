@@ -1,0 +1,31 @@
+a:2:{i:0;s:1390:"<div class="hidden-sm hidden-xs">
+	<p><a href="#" class="link-phone callback-link" data-toggle="modal" data-target="#callbackModal" data-theme="Обратный звонок">8 952 289-26-89</a>
+	</p>
+	<span class="hidden-xs hidden-sm">
+	<p><a href="https://api.whatsapp.com/send?phone=79522892689" target="_blank" class="link-network">WhatsApp</a>
+	</p>
+	<p><a href="mailto:art6%3280105@gmai%6C%2Ec%6Fm">art6280105@gmail.com</a>
+	</p>
+	</span>
+</div>
+<div class="visible-sm visible-xs">
+	<a data-toggle="modal" data-target="#contactWindow" class="link-phone">+79522892689</a>
+	<div class="modal fade" id="contactWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="row">
+						<div class="col-sm-4 col-xs-4"><a href="tel:+79522892689"><i class="fas fa-phone"></i></a>
+						</div>
+						<div class="col-sm-4 col-xs-4"><a href="whatsapp://send?phone=79522892689"><i class="fab fa-whatsapp"></i>
+							</a>
+						</div>
+						<div class="col-sm-4 hidden-xs"><a href="mailto:art6%3280105@gmai%6C%2Ec%6Fm">art6280105@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>";i:1;N;}

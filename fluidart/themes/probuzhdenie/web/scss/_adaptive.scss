@@ -1,0 +1,439 @@
+/* CSS Document */
+@media (min-width: 1100px) and (max-width: 1400px){
+	.text-main-page{
+		width: 40% !important;
+	}
+	.image-main-page{
+		width: 60% !important;
+	}
+	.main-page{
+		h2{
+			font-size: 34px;
+			font-size: 28px;
+		}
+		label{
+			//font-size: 14px;
+			font-size: 18px;
+		}
+		.text-main-page{
+			top: 0px;
+		}
+		.link-test-block{
+			margin: 30px 15px;
+			width: 75%;
+			label{
+				margin-top: 30px;
+			}
+		}
+	}
+	.desc-block{
+		background: url(../images/desc-block.jpg) -15% 100% no-repeat #fff;
+	}
+	
+}
+
+@media (max-width: 1024px){
+ 	.content-site, .container-site, .content-site-page{
+		width: 100%; margin: 0 auto;
+		max-width: none;
+		padding: 0px;
+	}
+}
+
+@media (max-width: 1400px){
+ 
+}
+
+@media (min-width: 768px) and (max-width: 1399px){
+	.main-page .image-main-page {
+		position: absolute;
+		width: 70%;
+		right: 30px;
+		top: 0px;
+		z-index: 2;
+	}
+}
+
+@media (max-width: 970px){
+	
+	.header-panel{
+		margin: 30px 0px;
+		margin: 15px 0px;
+		.logo{
+			text-align: center;
+			padding-bottom: 10px;
+		}
+		.contact-block{
+			text-align: center;
+		}
+	}
+	
+	.text-main-page{
+		padding: 0px;
+	}
+	
+	.main-page{
+		h2{
+			text-align: center;
+			background: url(../images/collective.jpg) 50% 50% no-repeat;
+			background-size: cover;
+			padding: 30px 15px;
+			padding: 100px 15px;
+			label{
+				background-color: rgba(93, 93, 131, 0.9);
+				display: inline;
+				@include fontF($raleway-black, 20px, 400, #fff);
+				line-height: 1.3;
+				position: relative; top: 35px;
+			}
+			&:after, &:before{
+				display: none;
+			}
+		}
+		label{
+			text-align: center; font-size: 14px; display: block;
+		}
+		.text-block-main-page{
+			top: 0px;
+		}
+		.text-main-page{
+			position: static; width: 100%;
+		}
+		.image-main-page{
+			position: static;
+		}
+		.link-test-block{
+			width: 90%;
+			margin: 15px auto;
+			label{
+				display: block; margin-top: 25px;
+				@include fontF($raleway, 16px, 400, #3a3a69);
+			}
+			.link-test{
+				padding: 15px;
+				@include fontF($raleway-black, 16px, 400, #fff);
+				@include align-center-flex;
+			}
+		}
+	}
+	
+	.pluses{
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+		@include fontF($raleway, 16px, 400, #3a3a69);
+		.image-plus{
+			height: auto; margin: 35px 0px;
+			display: block;
+		}
+	}
+	
+	
+	.test{
+		margin: 0px;
+		padding: 0px;
+		&:before{
+			content: '';
+			display: block;
+			width: 150px; height: 2px;
+			margin: 50px auto; margin-top: 30px;
+		}
+		h3{
+			@include fontF($raleway-bold, 24px, 600, #3a3a69);
+		}
+		h4{
+			@include fontF($raleway, 22px, 400, #3a3a69);
+			margin-top: 20px;
+		}
+		.test-block{
+			background: none;
+			border: solid 2px #3a3a69; border-radius: 10px;
+			padding: 20px;
+			width: 100%; height: auto;
+			position: static; left: 0px;
+		}
+	}
+
+	.desc-block{
+		padding: 40px 0px 20px;
+		h2{
+			padding: 25px 15px;
+		}
+		.descTest{
+			padding: 10px;
+			max-width: 346px; margin: 0 auto;
+			margin-top: 25px; margin-bottom: 40px;
+			p{
+				padding-top: 10px;
+			}
+			a{
+				width: 100%; margin-top: 15px;
+			}
+		}
+	}
+	
+	.prices{
+		a.link-test{
+			padding: 15px 20px;
+			font-size: 20px;
+		}
+	}
+	
+	.finish-test{
+		background: none;
+		border: solid 2px #3a3a69; border-radius: 10px;
+		width: 95%; height: auto;
+		padding-bottom: 40px; margin: 30px auto;
+		.form-finish{
+			input, textarea{
+				width: 95%;
+			}
+			button[type="submit"]{
+				width: 90%;
+				font-size: 16px;
+			}
+		}
+		.resultContact{
+			padding-top: 30px;
+		}
+	}
+	
+	.footer{
+		text-align: center;
+		margin-top: 0px;
+		.logo{
+			margin: 20px auto;
+		}
+		.socnetwork{
+			margin: 20px auto;
+		}
+		.copyright{
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
+	
+	#callbackModal{
+		.modal-dialog{
+			width: 95%; margin: 0 auto;
+			position: static;
+			transform: none;
+		}
+		.modal-content{
+			padding: 0px;
+			border-radius: 15px;
+		}
+		.modal-body, .modal-header{
+			padding: 10px;
+		}
+		.modal-header{
+			border: none;
+			h4{
+				padding-top: 15px;
+				font-size: 18px;
+			}
+			h5{
+				padding-top: 5px;
+				font-size: 14px;
+			}
+			.close{
+				margin-top: -5px;
+				top: 10px; right: 10px;
+				font-size: 30px;
+			}
+		}
+		.hour-time{
+			.radio{
+			  + label{
+					width: 50%;
+				}
+			}
+		}
+		label.agree{
+			width: 100%;
+			font-size: 10px;
+		}
+		input, textarea{
+			width: 100%;
+			margin: 5px auto;
+		}
+		button[type="submit"]{
+			width: 100%;
+			margin: 10px auto;
+			padding: 15px 10px;
+		}
+	}
+	
+	.desc-block, .pluses, .prices, .pay{
+		background: none;
+	}
+	
+	.pay{
+		#slider{
+			width: 100%; margin: 30px auto;
+			img{
+				margin-top: 0px; margin-bottom: 0px;
+			}
+		}
+		.pay-block{
+			padding: 40px 0px;
+		}
+		.text-block{
+			padding: 15px; padding-bottom: 40px;
+		}
+	}
+	
+	.slider-mask, .navs{
+		display: none !important;
+	}
+ 
+	.pluses{
+		h3{
+			padding: 30px 0px; margin-bottom: 0px;
+		}
+		.our-pluses{
+			width: 100%;
+			margin: 0 auto;
+			ol{
+				padding: 0px;
+				list-style: none;
+				li{
+					float: none;
+					&:before{
+						float: none;
+						position: relative; top: 0px;
+						padding-top: 42px;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+	.manager{
+		left: 0px !important;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (orientation: landscape){
+	.pluses{
+		.image-plus{
+			min-height: 150px;
+		}
+	}
+	
+	.main-page{
+		h2{
+			padding: 100px 0px;
+			margin: 0 auto;
+			width: 70%;
+			label{
+				@include fontF($raleway-black, 36px, 400, #fff);
+				line-height: 1.5;
+				position: static;
+			}
+		}
+		label{
+			width: 70%;
+			text-align: center;
+			font-size: 24px;
+			margin: 0 auto;
+			display: block;
+		}
+		.text-block-main-page{
+			top: 0px;
+		}
+		.link-test-block{
+			width: 90%;
+			margin: 15px auto;
+			label{
+				display: block; margin-top: 25px;
+				@include fontF($raleway, 16px, 400, #3a3a69);
+			}
+			.link-test{
+				padding: 15px;
+				@include fontF($raleway-black, 22px, 400, #fff);
+				@include align-center-flex;
+			}
+		}
+	}
+	
+	.desc-test{
+		width: 50% !important;
+		margin: 30px auto !important;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (orientation: landscape){
+ 
+}
+
+@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (orientation: portrait){
+ 
+}
+
+@media (max-width: 2100px) and (min-width: 1920px){
+	.main-page .image-main-page {
+		width: 55%;
+		right: 85px;
+		top: 35px;
+	}
+
+	.main-page .text-main-page {
+		position: relative;
+		z-index: 255;
+		width: 33%;
+		top: 60px;
+		left: 135px;
+	}
+}
+
+@media (max-width: 2100px) and (min-width: 1920px){
+	.main-page .text-main-page {
+		top: 80px;
+	}
+}
+
+@media (min-width: 1920px) and (max-width: 2100px){
+	.desc-block {
+		padding-top: 250px;
+	}
+	.main-page{
+		.text-main-page{
+			top: 100px;
+		}
+		.image-main-page{
+			width: 65%;
+			right: 65px;
+		}
+	}
+
+}
+
+@media (max-width: 1400px) and (min-width: 1100px){
+	.image-main-page {
+		width: 63% !important;
+	}
+}
+
+@media (max-width: 2100px) and (min-width: 1920px){
+	.main-page .image-main-page {
+		width: 55%;
+		right: 85px;
+		top: 35px;
+	}
+}
+
+@media (max-width: 2100px) and (min-width: 1920px){
+	.main-page .text-main-page {
+		top: 80px;
+	}
+}
+
+@media (min-width: 1900px) and (min-width: 1981px){
+	.manager{
+		position: relative;
+		left: -50px !important;
+	}
+}

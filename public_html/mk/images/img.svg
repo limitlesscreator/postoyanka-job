@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="Слой_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#6C6C6C;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#6C6C6C;stroke-miterlimit:10;}
+	.st2{opacity:0.7;fill:none;stroke:#2D2D2D;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<circle class="st0" cx="99.918" cy="44.764" r="26.544"/>
+<path class="st1" d="M158.001,156.538c0,0-2.814-47.424-20.037-73.8c-8.563-13.114-29.459-16.311-37.946-15.239
+	c-0.004,0.001-0.013,0-0.017,0c-9.526-0.027-31.052,2.204-39.515,15.014c-17.437,26.396-18.468,74.1-18.468,74.1"/>
+<ellipse class="st2" cx="100.001" cy="100.432" rx="96.98" ry="95.218"/>
+</svg>
