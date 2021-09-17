@@ -88,8 +88,198 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 
 
 <div class="day-item">
+<div class="head-day-item">
+	<p class="day-date">17  сентября - пятница</p>
+	<div id="day-17" class="day-discript">
+		<p>Посмотреть сюжеты</p>
+		<img src="images/arrow-2.png" alt=""></div>
+</div>
+<div id="day-17-img" class="img-container">
+	<img src="images/mk/17/r1.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r2.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r3.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r4.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r5.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r6.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r7.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r8.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r9.jpg" alt="" class="img-mk">
+	<img src="images/mk/17/r10.jpg" alt="" class="img-mk">
+	<a href="17  сентября - пятница" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>
+<div class="day-item">
 	<div class="head-day-item">
-		<p class="day-date">26  августа - четверг</p>
+		<p class="day-date">18  сентября - суббота</p>
+		<div id="day-18" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+	<div id="day-18-img" class="img-container">
+		<img src="images/mk/18/r1.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r2.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r3.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r4.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r5.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r6.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r7.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r8.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r9.jpg" alt="" class="img-mk">
+		<img src="images/mk/18/r10.jpg" alt="" class="img-mk">
+		<a href="18  сентября - суббота" class="reg-me-but reg-me">Записаться</a>
+	</div>
+</div>
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">19  сентября - воскресенье</p>
+		<div id="day-19" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+<div id="day-19-img" class="img-container">
+	<img src="images/mk/19/r1.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r2.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r3.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r4.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r5.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r6.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r7.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r8.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r9.jpg" alt="" class="img-mk">
+	<img src="images/mk/19/r10.jpg" alt="" class="img-mk">
+	<a href="19  сентября - воскресенье" class="reg-me-but reg-me">Записаться</a>
+</div>
+
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">20  сентября - понедельник</p>
+		<div id="day-20" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+	<div id="day-20-img" class="img-container">
+		<img src="images/mk/20/r1.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r2.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r3.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r4.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r5.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r6.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r7.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r8.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r9.jpg" alt="" class="img-mk">
+		<img src="images/mk/20/r10.jpg" alt="" class="img-mk">
+		<a href="20  сентября - понедельник" class="reg-me-but reg-me">Записаться</a>
+	</div>
+</div>
+</div>
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">21  сентября - вторник</p>
+		<div id="day-21" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+<div id="day-21-img" class="img-container">
+	<img src="images/mk/21/r1.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r2.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r3.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r4.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r5.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r6.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r7.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r8.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r9.jpg" alt="" class="img-mk">
+	<img src="images/mk/21/r10.jpg" alt="" class="img-mk">
+	<a href="21  сентября - вторник" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">22  сентября - среда</p>
+		<div id="day-22" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+<div id="day-22-img" class="img-container">
+	<img src="images/mk/22/r1.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r2.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r3.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r4.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r5.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r6.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r7.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r8.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r9.jpg" alt="" class="img-mk">
+	<img src="images/mk/22/r10.jpg" alt="" class="img-mk">
+	<a href="22  сентября - среда" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">23  сентября - четверг</p>
+		<div id="day-23" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+<div id="day-23-img" class="img-container">
+	<img src="images/mk/23/r1.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r2.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r3.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r4.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r5.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r6.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r7.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r8.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r9.jpg" alt="" class="img-mk">
+	<img src="images/mk/23/r10.jpg" alt="" class="img-mk">
+	<a href="23  сентября - четверг" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">24  сентября - пятница</p>
+		<div id="day-24" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+<div id="day-24-img" class="img-container">
+	<img src="images/mk/24/r1.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r2.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r3.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r4.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r5.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r6.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r7.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r8.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r9.jpg" alt="" class="img-mk">
+	<img src="images/mk/24/r10.jpg" alt="" class="img-mk">
+	<a href="24  сентября - пятница" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">25  сентября - суббота</p>
+		<div id="day-25" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""></div>
+	</div>
+<div id="day-25-img" class="img-container">
+	<img src="images/mk/25/r1.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r2.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r3.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r4.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r5.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r6.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r7.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r8.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r9.jpg" alt="" class="img-mk">
+	<img src="images/mk/25/r10.jpg" alt="" class="img-mk">
+	<a href="25  сентября - суббота" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">26  сентября - воскресенье</p>
 		<div id="day-26" class="day-discript">
 			<p>Посмотреть сюжеты</p>
 			<img src="images/arrow-2.png" alt=""></div>
@@ -105,12 +295,12 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	<img src="images/mk/26/r8.jpg" alt="" class="img-mk">
 	<img src="images/mk/26/r9.jpg" alt="" class="img-mk">
 	<img src="images/mk/26/r10.jpg" alt="" class="img-mk">
-	<a href="26  августа - четверг" class="reg-me-but reg-me">Записаться</a>
+	<a href="26  сентября - воскресенье" class="reg-me-but reg-me">Записаться</a>
 </div>
 </div>	
 <div class="day-item">
 	<div class="head-day-item">
-		<p class="day-date">27  августа - пятница</p>
+		<p class="day-date">27  сентября - понедельник</p>
 		<div id="day-27" class="day-discript">
 			<p>Посмотреть сюжеты</p>
 			<img src="images/arrow-2.png" alt=""></div>
@@ -126,12 +316,12 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	<img src="images/mk/27/r8.jpg" alt="" class="img-mk">
 	<img src="images/mk/27/r9.jpg" alt="" class="img-mk">
 	<img src="images/mk/27/r10.jpg" alt="" class="img-mk">
-	<a href="27  августа - пятница" class="reg-me-but reg-me">Записаться</a>
+	<a href="27  сентября - понедельник" class="reg-me-but reg-me">Записаться</a>
 </div>
 </div>	
 <div class="day-item">
 	<div class="head-day-item">
-		<p class="day-date">28  августа - суббота</p>
+		<p class="day-date">28  сентября - вторник</p>
 		<div id="day-28" class="day-discript">
 			<p>Посмотреть сюжеты</p>
 			<img src="images/arrow-2.png" alt=""></div>
@@ -147,12 +337,12 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	<img src="images/mk/28/r8.jpg" alt="" class="img-mk">
 	<img src="images/mk/28/r9.jpg" alt="" class="img-mk">
 	<img src="images/mk/28/r10.jpg" alt="" class="img-mk">
-	<a href="28  августа - суббота" class="reg-me-but reg-me">Записаться</a>
+	<a href="28  сентября - вторник" class="reg-me-but reg-me">Записаться</a>
 </div>
 </div>	
 <div class="day-item">
 	<div class="head-day-item">
-		<p class="day-date">29  августа - воскресенье</p>
+		<p class="day-date">29  сентября - среда</p>
 		<div id="day-29" class="day-discript">
 			<p>Посмотреть сюжеты</p>
 			<img src="images/arrow-2.png" alt=""></div>
@@ -168,12 +358,12 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	<img src="images/mk/29/r8.jpg" alt="" class="img-mk">
 	<img src="images/mk/29/r9.jpg" alt="" class="img-mk">
 	<img src="images/mk/29/r10.jpg" alt="" class="img-mk">
-	<a href="29  августа - воскресенье" class="reg-me-but reg-me">Записаться</a>
+	<a href="29  сентября - среда" class="reg-me-but reg-me">Записаться</a>
 </div>
 </div>	
 <div class="day-item">
 	<div class="head-day-item">
-		<p class="day-date">30  августа - понедельник</p>
+		<p class="day-date">30  сентября - четверг</p>
 		<div id="day-30" class="day-discript">
 			<p>Посмотреть сюжеты</p>
 			<img src="images/arrow-2.png" alt=""></div>
@@ -189,348 +379,9 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	<img src="images/mk/30/r8.jpg" alt="" class="img-mk">
 	<img src="images/mk/30/r9.jpg" alt="" class="img-mk">
 	<img src="images/mk/30/r10.jpg" alt="" class="img-mk">
-	<a href="30  августа - понедельник" class="reg-me-but reg-me">Записаться</a>
+	<a href="30  сентября - четверг" class="reg-me-but reg-me">Записаться</a>
 </div>
 </div>	
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">31  августа - вторник</p>
-		<div id="day-31" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-<div id="day-31-img" class="img-container">
-	<img src="images/mk/31/r1.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r2.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r3.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r4.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r5.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r6.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r7.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r8.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r9.jpg" alt="" class="img-mk">
-	<img src="images/mk/31/r10.jpg" alt="" class="img-mk">
-	<a href="31  августа - вторник" class="reg-me-but reg-me">Записаться</a>
-</div>
-</div>	
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">1  сентября - среда</p>
-		<div id="day-1" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-1-img" class="img-container">
-		<img src="images/mk/1/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/1/r10.jpg" alt="" class="img-mk">
-		<a href="1  сентября - среда" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">2  сентября - четверг</p>
-		<div id="day-2" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-2-img" class="img-container">
-		<img src="images/mk/2/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/2/r10.jpg" alt="" class="img-mk">
-		<a href="2  сентября - четверг" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">3  сентября - пятница</p>
-		<div id="day-3" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-3-img" class="img-container">
-		<img src="images/mk/3/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/3/r10.jpg" alt="" class="img-mk">
-		<a href="3  сентября - пятница" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">4  сентября - суббота</p>
-		<div id="day-4" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-4-img" class="img-container">
-		<img src="images/mk/4/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/4/r10.jpg" alt="" class="img-mk">
-		<a href="4  сентября - суббота" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div> <div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">5  сентября - воскресенье</p>
-		<div id="day-5" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-5-img" class="img-container">
-		<img src="images/mk/5/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/5/r10.jpg" alt="" class="img-mk">
-		<a href="5  сентября - воскресенье" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-
-
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">6  сентября - понедельник</p>
-		<div id="day-6" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-6-img" class="img-container">
-		<img src="images/mk/6/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/6/r10.jpg" alt="" class="img-mk">
-		<a href="6  сентября - понедельник" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">7  сентября - вторник</p>
-		<div id="day-7" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-7-img" class="img-container">
-		<img src="images/mk/7/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/7/r10.jpg" alt="" class="img-mk">
-		<a href="7  сентября - вторник" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">8  сентября - среда</p>
-		<div id="day-8" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-8-img" class="img-container">
-		<img src="images/mk/8/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/8/r10.jpg" alt="" class="img-mk">
-		<a href="8  сентября - среда" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">9  сентября - четверг</p>
-		<div id="day-9" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-9-img" class="img-container">
-		<img src="images/mk/9/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/9/r10.jpg" alt="" class="img-mk">
-		<a href="9  сентября - четверг" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">10  сентября - пятница</p>
-		<div id="day-10" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-10-img" class="img-container">
-		<img src="images/mk/10/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/10/r10.jpg" alt="" class="img-mk">
-		<a href="10  сентября - пятница" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">11  сентября - суббота</p>
-		<div id="day-11" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-11-img" class="img-container">
-		<img src="images/mk/11/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/11/r10.jpg" alt="" class="img-mk">
-		<a href="11  сентября - суббота" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-	
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">12  сентября - воскресенье</p>
-		<div id="day-12" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-12-img" class="img-container">
-		<img src="images/mk/12/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/12/r10.jpg" alt="" class="img-mk">
-		<a href="12  сентября - воскресенье" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">13  сентября - понедельник</p>
-		<div id="day-13" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-13-img" class="img-container">
-		<img src="images/mk/13/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/13/r10.jpg" alt="" class="img-mk">
-		<a href="13  сентября - понедельник" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">14  сентября - вторник</p>
-		<div id="day-14" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-14-img" class="img-container">
-		<img src="images/mk/14/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/14/r10.jpg" alt="" class="img-mk">
-		<a href="14  сентября - вторник" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">15  сентября - среда</p>
-		<div id="day-15" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""></div>
-	</div>
-	<div id="day-15-img" class="img-container">
-		<img src="images/mk/15/r1.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r2.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r3.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r4.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r5.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r6.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r7.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r8.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r9.jpg" alt="" class="img-mk">
-		<img src="images/mk/15/r10.jpg" alt="" class="img-mk">
-		<a href="15  сентября - среда" class="reg-me-but reg-me">Записаться</a>
-	</div>
-</div>
-
 </div>
 <!-- <script>
 	// let a = "2"
@@ -544,8 +395,10 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	let daym = mydate.getDate()
 
 	let firstData = document.querySelector(".date1-1")
-	firstData.textContent = day + 1
-	let dayarray = new Array("Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье")
+	let dayArray = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"]
+	let monthArray = ['января', 'февраля', 'марта','апреля', 'мая', 'июня','июля', 'августа', 'сентября','октября', 'ноября', 'декабря'
+]
+	firstData.textContent = `${daym} ${monthArray[month]} - ${dayArray[day - 1]}`
 
 </script> -->
 <div class="another">Другие даты уточняйте, пожалуйста, по телефону или оставьте свой для связи</div>
@@ -973,6 +826,10 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
     }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
     mgo({calltracking: {id: 22629, elements: [{"numberText":"78126450180"}]}});
 </script>
+
+
+
+  <!-- Load our React component. -->
 <style type="text/css">
 	.center-new{
 		text-align: center;
