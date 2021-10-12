@@ -94,6 +94,103 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	<div id="root"></div>
 
 <script type="text/babel">
+
+$('.open-win').hide();
+$('.white-window').hide();
+$('.connect-you').hide();
+
+
+$('.open-win').click(function(event) {
+  if ($(event.target).closest("#open-form").length) return;
+      $('.open-win').fadeOut(500);
+  event.stopPropagation();
+});
+
+$('.open-win img').click(function() {
+    $('.open-win').fadeOut(500);
+});
+
+
+$('nav a, .go').click(function(e){
+        var anchor = $(this);
+        var hh = 34; //header height
+
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - hh + 'px'
+        }, 750);
+    e.preventDefault();
+    });
+
+$('.mobile-menu p').click(function(e){
+        var anchor = $(this);
+        var hh = 34; //header height
+        $('.mobile-menu').toggleClass("t");
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - hh + 'px'
+        }, 750);
+    e.preventDefault();
+    });
+
+
+  $("#open-form").submit(function(e) { //устанавливаем событие отправки для формы с id=form
+    e.preventDefault();
+    var form_data = $(this).serialize(); //собераем все данные из формы
+    $.ajax({
+    type: "POST", //Метод отправки
+    url: $('#open-form').attr('action'), //путь до php фаила отправителя
+    data: form_data,
+    success: function() {
+    //код в этом блоке выполняется при успешной отправке сообщения
+    window.location.href = "thanks.php" //открываем страницу "спасибо"
+    $('#open-form').fadeOut(500);
+    $('.connect-you').fadeIn(500);
+    setTimeout(function() {    // Выставляем таймер
+      $('.open-win').hide(500);
+    }, 4500);
+
+    }
+  });
+});
+
+$('.mobile-button').click(function(){
+  $('.mobile-menu').toggleClass("t");
+});
+
+
+$('.reg-me, .but_up').click(function(e){
+    var a = $(this).attr('href');
+    $('.open-win').fadeIn(900);
+    $('#dataMk').attr("value",a);
+    e.preventDefault();
+});
+
+
+
+$('.img-mk').click(function(){
+  console.log('hi')
+  var img = $(this);
+  var src = img.attr('src');
+  $('body').append("<div class='popup'>"+
+                    "<div class='popup_bg'></div>"+
+                    "<img src='"+src+"' class='popup_img' />"+ // Само увеличенное фото
+                    "</div>");
+  $('.popup').fadeIn(800);
+  $('header').fadeOut(300);
+  $('#firstDisplay').fadeOut(300);
+  $('.popup_bg').click(function(){
+    $('.popup').fadeOut(800);    // Медленно убираем всплывающее окно
+    $('header').fadeIn(300);
+    $('#firstDisplay').fadeIn(800);
+    setTimeout(function() {    // Выставляем таймер
+      $('.popup').remove();
+    }, 800);
+  });
+});
+
+
+
+
+
 	    function weekDay(day:any){
         switch (day){
             case 'Mon':
@@ -147,249 +244,586 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
     console.log(weekDay((new Date(2021,month2,1)).toString().slice(0,3)))
 
       ReactDOM.render(
-      <>
-
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">1 {months(month1)} - {weekDay((new Date(2021,month1,1)).toString().slice(0,3))}</p>
-                    <div id="day-1" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-1-img" className="img-container">
-                    <img src="images/mk/1/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/1/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">2 {months(month1)} - {weekDay((new Date(2021,month1,2)).toString().slice(0,3))}</p>
-                    <div id="day-2" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-12-img" className="img-container">
-                    <img src="images/mk/2/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/2/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">3 {months(month1)} - {weekDay((new Date(2021,month1,3)).toString().slice(0,3))}</p>
-                    <div id="day-3" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-3-img" className="img-container">
-                    <img src="images/mk/3/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/3/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">4 {months(month1)} - {weekDay((new Date(2021,month1,4)).toString().slice(0,3))}</p>
-                    <div id="day-4" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-4-img" className="img-container">
-                    <img src="images/mk/4/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/4/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">5 {months(month1)} - {weekDay((new Date(2021,month1,5)).toString().slice(0,3))}</p>
-                    <div id="day-5" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-5-img" className="img-container">
-                    <img src="images/mk/5/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/5/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
+      <div>
 
 
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">6 {months(month1)} - {weekDay((new Date(2021,month1,6)).toString().slice(0,3))}</p>
-                    <div id="day-6" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-16-img" className="img-container">
-                    <img src="images/mk/6/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/6/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">7 {months(month1)} - {weekDay((new Date(2021,month1,7)).toString().slice(0,3))}</p>
-                    <div id="day-7" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-7-img" className="img-container">
-                    <img src="images/mk/7/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/7/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">8 {months(month1)} - {weekDay((new Date(2021,month1,8)).toString().slice(0,3))}</p>
-                    <div id="day-8" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-8-img" className="img-container">
-                    <img src="images/mk/8/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/8/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-            
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">9 {months(month1)} - {weekDay((new Date(2021,month1,9)).toString().slice(0,3))}</p>
-                    <div id="day-9" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-9-img" className="img-container">
-                    <img src="images/mk/9/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/9/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
+
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">12 {months(month1)} - {weekDay((new Date(2021,month1,12)).toString().slice(0,3))}</p>
+		<div id="day-12" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+	<div id="day-12-img" class="img-container">
+		<img src="images/mk/12/r1.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r2.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r3.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r4.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r5.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r6.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r7.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r8.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r9.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/12/r10.jpg" alt="" class="img-mk"/>
+		<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+	</div>
 </div>
-                <div className="day-item">
-                    <div className="head-day-item">
-                        <p className="day-date">10 {months(month1)} - {weekDay((new Date(2021,month1,10)).toString().slice(0,3))}</p>
-                        <div id="day-10" className="day-discript">
-                            <p>Посмотреть сюжеты</p>
-                            <img src="images/arrow-2.png" alt=""/></div>
-                    </div>
-                    <div id="day-10-img" className="img-container">
-                        <img src="images/mk/10/r1.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r2.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r3.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r4.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r5.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r6.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r7.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r8.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r9.jpg" alt="" className="img-mk"/>
-                        <img src="images/mk/10/r10.jpg" alt="" className="img-mk"/>
-                        <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                    </div>
-                </div>
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">13 {months(month1)} - {weekDay((new Date(2021,month1,13)).toString().slice(0,3))}</p>
+		<div id="day-13" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+	<div id="day-13-img" class="img-container">
+		<img src="images/mk/13/r1.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r2.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r3.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r4.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r5.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r6.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r7.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r8.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r9.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/13/r10.jpg" alt="" class="img-mk"/>
+		<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+	</div>
+</div>
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">14 {months(month1)} - {weekDay((new Date(2021,month1,14)).toString().slice(0,3))}</p>
+		<div id="day-14" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+	<div id="day-14-img" class="img-container">
+		<img src="images/mk/14/r1.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r2.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r3.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r4.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r5.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r6.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r7.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r8.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r9.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/14/r10.jpg" alt="" class="img-mk"/>
+		<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+	</div>
+</div>
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">15 {months(month1)} - {weekDay((new Date(2021,month1,15)).toString().slice(0,3))}</p>
+		<div id="day-15" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+	<div id="day-15-img" class="img-container">
+		<img src="images/mk/15/r1.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r2.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r3.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r4.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r5.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r6.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r7.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r8.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r9.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/15/r10.jpg" alt="" class="img-mk"/>
+		<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+	</div>
+</div>
 
-            <div className="day-item">
-                <div className="head-day-item">
-                    <p className="day-date">11 {months(month1)} - {weekDay((new Date(2021, month1, 11)).toString().slice(0, 3))}</p>
-                    <div id="day-11" className="day-discript">
-                        <p>Посмотреть сюжеты</p>
-                        <img src="images/arrow-2.png" alt=""/></div>
-                </div>
-                <div id="day-11-img" className="img-container">
-                    <img src="images/mk/11/r1.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r2.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r3.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r4.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r5.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r6.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r7.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r8.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r9.jpg" alt="" className="img-mk"/>
-                    <img src="images/mk/11/r10.jpg" alt="" className="img-mk"/>
-                    <a href="Записаться" className="reg-me-but reg-me">Записаться</a>
-                </div>
-            </div>
-            //FIX BRACKETS!!
 
-            </>,
+<div class="day-item">
+<div class="head-day-item">
+	<p class="day-date">16 {months(month1)} - {weekDay((new Date(2021,month1,16)).toString().slice(0,3))}</p>
+	<div id="day-16" class="day-discript">
+		<p>Посмотреть сюжеты</p>
+		<img src="images/arrow-2.png" alt=""/></div>
+</div>
+<div id="day-16-img" class="img-container">
+	<img src="images/mk/16/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/16/r10.jpg" alt="" class="img-mk"/>
+	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>
+<div class="day-item">
+<div class="head-day-item">
+	<p class="day-date">17 {months(month1)} - {weekDay((new Date(2021,month1,17)).toString().slice(0,3))}</p>
+	<div id="day-17" class="day-discript">
+		<p>Посмотреть сюжеты</p>
+		<img src="images/arrow-2.png" alt=""/></div>
+</div>
+<div id="day-17-img" class="img-container">
+	<img src="images/mk/17/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/17/r10.jpg" alt="" class="img-mk"/>
+	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">18 {months(month1)} - {weekDay((new Date(2021,month1,18)).toString().slice(0,3))}</p>
+		<div id="day-18" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+	<div id="day-18-img" class="img-container">
+		<img src="images/mk/18/r1.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r2.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r3.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r4.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r5.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r6.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r7.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r8.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r9.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/18/r10.jpg" alt="" class="img-mk"/>
+		<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+	</div>
+</div>
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">19 {months(month1)} - {weekDay((new Date(2021,month1,19)).toString().slice(0,3))}</p>
+		<div id="day-19" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-19-img" class="img-container">
+	<img src="images/mk/19/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/19/r10.jpg" alt="" class="img-mk"/>
+	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+</div>
+ </div>
+
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">20 {months(month1)} - {weekDay((new Date(2021,month1,20)).toString().slice(0,3))}</p>
+		<div id="day-20" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+	<div id="day-20-img" class="img-container">
+		<img src="images/mk/20/r1.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r2.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r3.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r4.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r5.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r6.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r7.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r8.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r9.jpg" alt="" class="img-mk"/>
+		<img src="images/mk/20/r10.jpg" alt="" class="img-mk"/>
+		<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+	</div>
+</div>
+
+      	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">21 {months(month1)} - {weekDay((new Date(2021,month1,21)).toString().slice(0,3))}</p>
+		<div id="day-21" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-21-img" class="img-container">
+	<img src="images/mk/21/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/21/r10.jpg" alt="" class="img-mk"/>
+	<a href="21  сентября - вторник" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">22 {months(month1)} - {weekDay((new Date(2021,month1,22)).toString().slice(0,3))}</p>
+		<div id="day-22" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-22-img" class="img-container">
+	<img src="images/mk/22/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/22/r10.jpg" alt="" class="img-mk"/>
+	<a href="22  сентября - среда" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">23 {months(month1)} - {weekDay((new Date(2021,month1,23)).toString().slice(0,3))}</p>
+		<div id="day-23" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-23-img" class="img-container">
+	<img src="images/mk/23/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/23/r10.jpg" alt="" class="img-mk"/>
+	<a href="23  сентября - четверг" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">24 {months(month1)} - {weekDay((new Date(2021,month1,24)).toString().slice(0,3))}</p>
+		<div id="day-24" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-24-img" class="img-container">
+	<img src="images/mk/24/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/24/r10.jpg" alt="" class="img-mk"/>
+	<a href="24  сентября - пятница" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">25 {months(month1)} - {weekDay((new Date(2021,month1,25)).toString().slice(0,3))}</p>
+		<div id="day-25" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-25-img" class="img-container">
+	<img src="images/mk/25/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/25/r10.jpg" alt="" class="img-mk"/>
+	<a href="25  сентября - суббота" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">26 {months(month1)} - {weekDay((new Date(2021,month1,26)).toString().slice(0,3))}</p>
+		<div id="day-26" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-26-img" class="img-container">
+	<img src="images/mk/26/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/26/r10.jpg" alt="" class="img-mk"/>
+	<a href="26  сентября - воскресенье" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">27 {months(month1)} - {weekDay((new Date(2021,month1,27)).toString().slice(0,3))}</p>
+		<div id="day-27" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-27-img" class="img-container">
+	<img src="images/mk/27/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/27/r10.jpg" alt="" class="img-mk"/>
+	<a href="27  сентября - понедельник" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">28 {months(month1)} - {weekDay((new Date(2021,month1,28)).toString().slice(0,3))}</p>
+		<div id="day-28" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-28-img" class="img-container">
+	<img src="images/mk/28/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/28/r10.jpg" alt="" class="img-mk"/>
+	<a href="28  сентября - вторник" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">29 {months(month1)} - {weekDay((new Date(2021,month1,29)).toString().slice(0,3))}</p>
+		<div id="day-29" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-29-img" class="img-container">
+	<img src="images/mk/29/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/29/r10.jpg" alt="" class="img-mk"/>
+	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">30 {months(month1)} - {weekDay((new Date(2021,month1,30)).toString().slice(0,3))}</p>
+		<div id="day-30" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-30-img" class="img-container">
+	<img src="images/mk/30/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/30/r10.jpg" alt="" class="img-mk"/>
+	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+<div class="day-item">
+	<div class="head-day-item">
+		<p class="day-date">31 {months(month1)} - {weekDay((new Date(2021,month1,31)).toString().slice(0,3))}</p>
+		<div id="day-31" class="day-discript">
+			<p>Посмотреть сюжеты</p>
+			<img src="images/arrow-2.png" alt=""/></div>
+	</div>
+<div id="day-31-img" class="img-container">
+	<img src="images/mk/31/r1.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r2.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r3.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r4.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r5.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r6.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r7.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r8.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r9.jpg" alt="" class="img-mk"/>
+	<img src="images/mk/31/r10.jpg" alt="" class="img-mk"/>
+	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
+</div>
+</div>	
+
+            </div>,
         document.getElementById('root')
       );
+
+      
+
+
+$('.day-discript').click(function() {
+// console.log('hi')
+
+  var d = $(this).attr('id');
+  if (d == "day-1"){
+
+    $('.img-container').removeClass("active");
+    $('#day-1-img').toggleClass("active");
+  }
+  if (d == "day-2"){
+    $('.img-container').removeClass("active");
+    $('#day-2-img').toggleClass("active");
+  }
+  if (d == "day-3"){
+    $('.img-container').removeClass("active");
+    $('#day-3-img').toggleClass("active");
+  }
+  if (d == "day-4"){
+    $('.img-container').removeClass("active");
+    $('#day-4-img').toggleClass("active");
+  }
+  if (d == "day-5"){
+    $('.img-container').removeClass("active");
+    $('#day-5-img').toggleClass("active");
+  }
+  if (d == "day-6"){
+    $('.img-container').removeClass("active");
+    $('#day-6-img').toggleClass("active");
+  }
+  if (d == "day-7"){
+    $('.img-container').removeClass("active");
+    $('#day-7-img').toggleClass("active");
+  }
+  if (d == "day-8"){
+    $('.img-container').removeClass("active");
+    $('#day-8-img').toggleClass("active");
+  }
+  if (d == "day-9"){
+    $('.img-container').removeClass("active");
+    $('#day-9-img').toggleClass("active");
+  }
+  if (d == "day-10"){
+    $('.img-container').removeClass("active");
+    $('#day-10-img').toggleClass("active");
+  }
+  if (d == "day-11"){
+    $('.img-container').removeClass("active");
+    $('#day-11-img').toggleClass("active");
+  }
+  if (d == "day-12"){
+    $('.img-container').removeClass("active");
+    $('#day-12-img').toggleClass("active");
+  }
+  if (d == "day-13"){
+    $('.img-container').removeClass("active");
+    $('#day-13-img').toggleClass("active");
+  }
+  if (d == "day-14"){
+    $('.img-container').removeClass("active");
+    $('#day-14-img').toggleClass("active");
+  }
+  if (d == "day-15"){
+    $('.img-container').removeClass("active");
+    $('#day-15-img').toggleClass("active");
+  }
+  if (d == "day-131"){
+    $('.img-container').removeClass("active");
+    $('#day-15-img').toggleClass("active");
+  }
+  if (d == "day-15"){
+    $('.img-container').removeClass("active");
+    $('#day-15-img').toggleClass("active");
+  }
+  if (d == "day-15"){
+    $('.img-container').removeClass("active");
+    $('#day-15-img').toggleClass("active");
+  }
+    if (d == "day-16"){
+    $('.img-container').removeClass("active");
+    $('#day-16-img').toggleClass("active");
+  }
+      if (d == "day-17"){
+    $('.img-container').removeClass("active");
+    $('#day-17-img').toggleClass("active");
+  }
+      if (d == "day-18"){
+    $('.img-container').removeClass("active");
+    $('#day-18-img').toggleClass("active");
+  }
+      if (d == "day-19"){
+    $('.img-container').removeClass("active");
+    $('#day-19-img').toggleClass("active");
+  }
+   if (d == "day-20"){
+    $('.img-container').removeClass("active");
+    $('#day-20-img').toggleClass("active");
+  }
+   if (d == "day-21"){
+    $('.img-container').removeClass("active");
+    $('#day-21-img').toggleClass("active");
+  }
+     if (d == "day-22"){
+    $('.img-container').removeClass("active");
+    $('#day-22-img').toggleClass("active");
+  }
+     if (d == "day-23"){
+    $('.img-container').removeClass("active");
+    $('#day-23-img').toggleClass("active");
+  }
+     if (d == "day-24"){
+    $('.img-container').removeClass("active");
+    $('#day-24-img').toggleClass("active");
+  }
+     if (d == "day-25"){
+    $('.img-container').removeClass("active");
+    $('#day-25-img').toggleClass("active");
+  }
+     if (d == "day-26"){
+    $('.img-container').removeClass("active");
+    $('#day-26-img').toggleClass("active");
+  }
+     if (d == "day-27"){
+    $('.img-container').removeClass("active");
+    $('#day-27-img').toggleClass("active");
+  }
+     if (d == "day-28"){
+    $('.img-container').removeClass("active");
+    $('#day-28-img').toggleClass("active");
+  }
+     if (d == "day-29"){
+    $('.img-container').removeClass("active");
+    $('#day-29-img').toggleClass("active");
+  }
+     if (d == "day-30"){
+    $('.img-container').removeClass("active");
+    $('#day-30-img').toggleClass("active");
+  }
+     if (d == "day-31"){
+    $('.img-container').removeClass("active");
+    $('#day-31-img').toggleClass("active");
+  }
+  console.log('hi')
+});
 
     </script> 
 

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 $('.open-win').hide();
 $('.white-window').hide();
 $('.connect-you').hide();
@@ -92,8 +91,11 @@ $('.img-mk').click(function(){
 });
 
 $('.day-discript').click(function() {
+// console.log('hi')
+
   var d = $(this).attr('id');
   if (d == "day-1"){
+
     $('.img-container').removeClass("active");
     $('#day-1-img').toggleClass("active");
   }
@@ -229,13 +231,16 @@ $('.day-discript').click(function() {
     $('.img-container').removeClass("active");
     $('#day-31-img').toggleClass("active");
   }
+  console.log('hi')
 });
 
-/*$.mask.definitions['~']='[+-]';*/
-$('#phoneForm').mask('(999) 999-9999');
+// $.mask.definitions['~']='[+-]';
+// $('#phoneForm').mask('(999) 999-9999');
+
 
 
 
 
 
 });//конец скрипта
+
