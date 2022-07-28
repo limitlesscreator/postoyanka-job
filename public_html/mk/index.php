@@ -240,7 +240,7 @@ $('.img-mk').click(function(){
 
         }
     }
-    const month1 = 6
+    const month1 = 7
     const month2 = 4
     console.log(weekDay((new Date(2021,month2,1)).toString().slice(0,3)))
 
