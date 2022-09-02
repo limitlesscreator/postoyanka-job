@@ -58,7 +58,7 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 	</header>
 	<section id="firstDisplay">	
 		<section class="utp">
-			<p>Ваша картина маслом на холсте<br>за 3 часа от 1300 рублей<br>
+			<p>Ваша картина маслом на холсте<br>за 3 часа от 1500 рублей<br>
 			"все включено"</p>
 			<a href="#mk-schedule" class="but-more go">Смотреть расписание</a>
 			<p><span>Опыт и навыки рисования не требуются!</span></p>
@@ -240,7 +240,7 @@ $('.img-mk').click(function(){
 
         }
     }
-    const month1 = 7
+    const month1 = 8
     const month2 = 4
     console.log(weekDay((new Date(2021,month2,1)).toString().slice(0,3)))
 
@@ -890,27 +890,7 @@ $('.img-mk').click(function(){
 	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
 </div>
 </div>
-<div class="day-item">
-	<div class="head-day-item">
-		<p class="day-date">31 {months(month1)} - {weekDay((new Date(2022, month1,31)).toString().slice(0,3))}</p>
-		<div id="day-31" class="day-discript">
-			<p>Посмотреть сюжеты</p>
-			<img src="images/arrow-2.png" alt=""/></div>
-	</div>
-<div id="day-31-img" class="img-container">
-	<img src="images/mk/31/r1.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r2.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r3.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r4.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r5.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r6.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r7.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r8.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r9.jpg" alt="" class="img-mk"/>
-	<img src="images/mk/31/r10.jpg" alt="" class="img-mk"/>
-	<a href="Записаться" class="reg-me-but reg-me">Записаться</a>
-</div>
-</div>
+
 
             </div>,
         document.getElementById('root')
@@ -1297,45 +1277,77 @@ $('.day-discript').click(function() {
 				<div class="in-format">
 					<p class="x">20x30</p>
 					<hr>
-					<p class="x-price">1300 <span class="rub">Р</span></p>
-					<div class="center-new">(вместо 1700 ₽)</div>
+					<p class="x-price">1500 <span class="rub">Р</span></p>
+					<div class="center-new">(вместо 2200 ₽)</div>
 				</div>
-			</div
-			><div class="format">
+			</div>
+			<div class="format">
+				<div class="in-format">
+					<p class="x">25x35 / 30x30</p>
+					<hr>
+					<p class="x-price">1750 <span class="rub">Р</span></p>
+					<div class="center-new">(вместо 2500 ₽)</div>
+				</div>
+			</div>
+			<div class="format big">
 				<div class="in-format">
 					<p class="x">30x40</p>
 					<hr>
-					<p class="x-price">1950 <span class="rub">Р</span></p>
-					<div class="center-new">(вместо 2800 ₽)</div>
+					<p class="x-price">2100 <span class="rub">Р</span></p>
+					<div class="center-new">(вместо 3000 ₽)</div>
 				</div>
-			</div
-			><div class="format big">
+			</div>
+						<div class="format">
+            				<div class="in-format">
+            					<p class="x">35x45 / 30x50 40x40</p>
+            					<hr>
+            					<p class="x-price">2500 <span class="rub">Р</span></p>
+            					<div class="center-new">(вместо 3600 ₽)</div>
+            				</div>
+            			</div>
+			<div class="format ">
 				<div class="in-format">
-					<p class="x">40x50</p>
+					<p class="x">40x50 / 30x60</p>
 					<hr>
-					<p class="x-price green" >2750 <span class="rub">Р</span></p>
-										<div class="center-new">(вместо 3950 ₽)</div>
+					<p class="x-price green" >2800 <span class="rub">Р</span></p>
+										<div class="center-new">(вместо 4100 ₽)</div>
 
 				</div>
-			</div
-			><div class="format">
+			</div>
+			<div class="format">
 				<div class="in-format">
-					<p class="x">40x60</p>
+					<p class="x">40x60 / 50x50</p>
 					<hr>
-					<p class="x-price">3200 <span class="rub">Р</span></p>
-															<div class="center-new">(вместо 4600 ₽) </div>
+					<p class="x-price">3600 <span class="rub">Р</span></p>
+															<div class="center-new">(вместо 5250 ₽) </div>
 
 				</div>
-			</div
-			><div class="format">
+			</div>
+						<div class="format">
+            				<div class="in-format">
+            					<p class="x">50x60</p>
+            					<hr>
+            					<p class="x-price">4000 <span class="rub">Р</span></p>
+            					<div class="center-new">(вместо 5800 ₽)</div>
+            				</div>
+            			</div>
+			<div class="format">
 				<div class="in-format">
 					<p class="x">50x70</p>
 					<hr>
-					<p class="x-price">3800 <span class="rub">Р</span></p>
-					<div class="center-new">(вместо 5500 ₽) </div>
+					<p class="x-price">4350 <span class="rub">Р</span></p>
+					<div class="center-new">(вместо 6300 ₽) </div>
 				</div>
-			</div
-			>
+			</div>
+
+						<div class="format">
+            				<div class="in-format">
+            					<p class="x">60x80</p>
+            					<hr>
+            					<p class="x-price">4350 <span class="rub">Р</span></p>
+            					<div class="center-new">(вместо 5550 ₽)</div>
+            				</div>
+            			</div>
 		</section>
 		<a href="Кнопка: Заказать формат, блок: Стоимость МК" class="but_up" >Заказать формат</a>
 	</section>	
@@ -1530,13 +1542,20 @@ $('.day-discript').click(function() {
 	.rub{
 
 	}
+	.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
 </style>
+
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
-  <!-- Загрузим наш React-компонент. -->
   <script src="like_button.js"></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
+  <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
 </body>
 
-</html></hтмл>
+</html>
