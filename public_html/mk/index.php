@@ -56,7 +56,7 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 			<a href="Обратный звонок" class="reg-me">обратный звонок</a>
 		</div>
 	</header>
-	<section id="firstDisplay">	
+	<section style="background-image: url(./images/bg_1920new.jpg)"  id="firstDisplay">
 		<section class="utp">
 			<p>Ваша картина маслом на холсте<br>за 3 часа от 2000 рублей<br>
 			все включено</p>
@@ -68,6 +68,7 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 
 		</section>
 	</section>
+
 	<!--<section id="about">	
 		<p>	
 			
@@ -1083,7 +1084,7 @@ $('.day-discript').click(function() {
 
 			<div class="format">
 				<div class="in-format">
-					<p class="x">25x35 / 30x30</p>
+					<p class="x">20х30</p>
 					<hr>
 					<p class="x-price">2000 <span class="rub">Р</span></p>
 					<div class="center-new">(вместо 2900 ₽)</div>
@@ -1091,7 +1092,7 @@ $('.day-discript').click(function() {
 			</div>
 			<div class="format big">
 				<div class="in-format">
-					<p class="x">30x40</p>
+					<p class="x">25х35</p>
 					<hr>
 					<p class="x-price">2400 <span class="rub">Р</span></p>
 					<div class="center-new">(вместо 3500 ₽)</div>
@@ -1099,7 +1100,7 @@ $('.day-discript').click(function() {
 			</div>
 						<div class="format">
             				<div class="in-format">
-            					<p class="x">35x45 / 40x40</p>
+            					<p class="x">30х40</p>
             					<hr>
             					<p class="x-price">2800 <span class="rub">Р</span></p>
             					<div class="center-new">(вместо 4000 ₽)</div>
@@ -1107,16 +1108,15 @@ $('.day-discript').click(function() {
             			</div>
 			<div class="format ">
 				<div class="in-format">
-					<p class="x">40x50 / 30x60</p>
+					<p class="x">35х45</p>
 					<hr>
 					<p class="x-price green" >3100 <span class="rub">Р</span></p>
 										<div class="center-new">(вместо 4500 ₽)</div>
-
 				</div>
 			</div>
 			<div class="format">
 				<div class="in-format">
-					<p class="x">40x60 / 50x50</p>
+					<p class="x">40х50</p>
 					<hr>
 					<p class="x-price">3600 <span class="rub">Р</span></p>
 															<div class="center-new">(вместо 5250 ₽) </div>
@@ -1125,7 +1125,7 @@ $('.day-discript').click(function() {
 			</div>
 						<div class="format">
             				<div class="in-format">
-            					<p class="x">50x60</p>
+            					<p class="x">40х60</p>
             					<hr>
             					<p class="x-price">4000 <span class="rub">Р</span></p>
             					<div class="center-new">(вместо 5800 ₽)</div>
@@ -1135,8 +1135,8 @@ $('.day-discript').click(function() {
 				<div class="in-format">
 					<p class="x">50x70</p>
 					<hr>
-					<p class="x-price">4350 <span class="rub">Р</span></p>
-					<div class="center-new">(вместо 6300 ₽) </div>
+					<p class="x-price">5550 <span class="rub">Р</span></p>
+					<div class="center-new">(вместо 7900 ₽) </div>
 				</div>
 			</div>
 
