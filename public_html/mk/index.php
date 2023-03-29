@@ -56,19 +56,17 @@ src="https://www.facebook.com/tr?id=168066685195885&ev=PageView&noscript=1"
 			<a href="Обратный звонок" class="reg-me">обратный звонок</a>
 		</div>
 	</header>
-	<section style="background-image: url(./images/bg_1920new.jpg)"  id="firstDisplay">
-		<section class="utp">
-			<p>Ваша картина маслом на холсте<br>за 3 часа от 2000 рублей<br>
-			все включено</p>
-			<a href="#mk-schedule" class="but-more go">Смотреть расписание</a>
-			<p><span>Опыт и навыки рисования не требуются!</span></p>
-			<p style="font-size:18px; text-align:center;max-width:720px;margin:0 auto">	
-				Занятия проводятся в небольших группах до 10 человек
+	<section style="background-image: url(./images/bg_1920new.jpg); height: 60%; background-position: center";  id="firstDisplay">
+
+	</section>
+<section class="utp">
+			<p class="firstTextTitle" style="font-size:48px;text-align:center;font-weight: 700;margin:0 auto">Напишите свою картину маслом на холсте <br class="deleteBR"/>  под руководством художника</p>
+			<a style='background: pink; color: black; margin-top: 50px'  href="#mk-schedule" class="but-more go">Смотреть расписание</a>
+			<p class="secondTextTitle" style="font-size:44px; text-align:center;margin:50px auto 0">
+				Мастер-класс все включено от 2000₽, <br class="deleteBR"/> навыки рисования от Вас не требуются!
 			</p>
 
 		</section>
-	</section>
-
 	<!--<section id="about">	
 		<p>	
 			
@@ -1145,6 +1143,9 @@ $('.day-discript').click(function() {
 		<a href="Кнопка: Заказать формат, блок: Стоимость МК" class="but_up" >Заказать формат</a>
 	</section>	
 	<section id="maps" style="background: #F6F6F6;">
+	        <div style="text-align: center; margin-bottom: 20px; margin-top: -30px;">Все наши акции на месяц собраны тут:
+                <a href="https://vk.com/topic-65161275_31747484">https://vk.com/topic-65161275_31747484</a>
+                </div>
 		<section class="wrapper" style="max-width: 400px;">
 			<div class="map-item">
 				<div>	<!-- class="mobile-none"-->
@@ -1339,6 +1340,22 @@ $('.day-discript').click(function() {
 	flex-wrap: wrap;
 	justify-content: center;
 	}
+	@media (max-width: 1200px) {
+	.firstTextTitle{
+	font-size:25px !important;
+    margin-top: -40px !important;
+    margin-bottom: -30px !important;
+    padding: 10px;
+	}
+	.secondTextTitle{
+	font-size:22px !important;
+	padding: 10px;
+	margin-top: 20px !important;
+	margin-bottom: -40px !important;
+	}
+	.deleteBR{
+	    display: none
+	}}
 </style>
 
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
